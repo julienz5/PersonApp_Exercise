@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace PersonApp
 {
@@ -13,17 +16,29 @@ namespace PersonApp
         {
             InitializeComponent();
 
-            List<string> data = new List<string>();
-            data.Add("M");
-            data.Add("F");
-            Sexe.ItemsSource = data;
+            List<string> myList = new List<string>();
+            myList.Add("M");
+            myList.Add("F");
+            Sexe.ItemsSource = myList;
             Sexe.SelectedIndex = 0;
+
+            ImgPerson.Source = null;// GetImage("");
         }
 
         private void Sexe_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
             string selected = e.AddedItems[0] as string;
+            
         }
 
+        private void textbox1_click(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Prénom.Text = "";
+        }
+
+        private ImageSource GetImage(string name)
+        {
+            return new BitmapImage(new Uri("pack://application:,,,/PersonApp;component/Resources/" + name));
+        }
     }
 }
