@@ -1,0 +1,5 @@
+C:\DEV\PersonApp\MaLib\bin\Debug\MaLib.dll
+C:\DEV\PersonApp\MaLib\bin\Debug\MaLib.pdb
+C:\DEV\PersonApp\MaLib\obj\Debug\MaLib.csprojResolveAssemblyReference.cache
+C:\DEV\PersonApp\MaLib\obj\Debug\MaLib.dll
+C:\DEV\PersonApp\MaLib\obj\Debug\MaLib.pdb
