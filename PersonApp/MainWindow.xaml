@@ -18,12 +18,12 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Vertical">
-            <TextBox Name="Prénom" Margin="3" TextWrapping="Wrap" Text="Prénom" Grid.Row="0" VerticalAlignment="Top" Height="25" PreviewMouseDown="textbox1_click" />
+            <TextBox Name="Prénom" Margin="3" TextWrapping="Wrap" Text="Prénom" Grid.Row="0" VerticalAlignment="Top" Height="25" TextChanged="TextBox_TextChanged" PreviewMouseDown="TextBox_click" />
             <ComboBox Name="Sexe" Margin="3" Grid.Row="0" VerticalAlignment="Top" Height="25" SelectionChanged="Sexe_SelectionChanged_1" />
-            <TextBox Name="age" Margin="3" TextWrapping="Wrap" Text="Age" Grid.Row="0" VerticalAlignment="Top" Height="25"/>
+            <TextBox Name="Age" Margin="3" TextWrapping="Wrap" Text="Age" Grid.Row="0" VerticalAlignment="Top" Height="25" TextChanged="TextBox_TextChanged" PreviewMouseDown="TextBox_click"/>
         </StackPanel>
         <TextBox Name ="who" Grid.Column="1" HorizontalAlignment="Center" Margin="3" TextWrapping="Wrap" Text="?" VerticalAlignment="Center" BorderThickness="0" FontSize="50"/>
-        <Image Name ="ImgPerson"  Grid.Column="1" Grid.Row="0" Source="Resources/silhouette_bébé.png"></Image>
+        <Image Name ="ImgPerson"  Grid.Column="1" Grid.Row="0" ></Image>
 
     </Grid>
 </Window>
